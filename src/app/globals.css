@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  /* --color-red: #F94B50; */
+  --color-red: #ee3139;
+  /* Purana primary */
+  --color-yellow: #c7c23d;
+  /* Purana secondary */
+  --color-green: #8dc53c;
+  /* Purana third */
+  --color-navy: #312b59;
+  /* Purana fourth */
+
+  /* --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif; */
+  /* --font-heading: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif; */
+
+  --font-sans: var(--font-rethink-sans), ui-sans-serif, system-ui, sans-serif;
+  /* --font-heading: var(--font-rethink-sans), ui-sans-serif, system-ui, sans-serif; */
+  /* --font-heading: var(--font-onest), ui-sans-serif, system-ui, sans-serif; */
+  --font-heading: var(--font-onest), ui-sans-serif, system-ui, sans-serif;
+
+
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-spin-slow: spin 12s linear infinite;
+  --breakpoint-3xl: 109.375rem;
+  --breakpoint-4xl: 1921px;
+}
+
+section {
+  padding: 4.5rem 0;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee linear infinite;
+  }
+}
+
+@layer base {
+  :root {
+    --bg-overlay: rgba(49, 43, 89, 0.85);
+    /* fourth color with opacity */
+  }
+}
+
+@layer base {
+  p {
+    @apply text-gray-800 dark:text-gray-800 mb-3 text-base leading-relaxed font-light;
+  }
+
+
+}
+
+@layer components {
+  .new-container {
+    @apply container md:max-w-[94%] xl:max-w-full 3xl:max-w-[97%] mx-auto px-4 3xl:px-4;
+  }
+
+  /* .my-inner-container {
+
+        @apply container md:max-w-[94%] xl:w-[95%] 3xl:max-w-10/12 mx-auto px-4 3xl:px-12;
+    } */
+}
