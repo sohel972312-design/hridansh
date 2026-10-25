@@ -200,7 +200,7 @@ export default function Testimonials() {
 
             {/* Video Modal Popup */}
             {isModalOpen && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-[3px] p-4 transition-all duration-300">
+                <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/70 backdrop-blur-xs p-4 transition-all duration-300">
 
                     {/* Modal Content */}
                     <div className="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl shadow-black/50 animate-in fade-in zoom-in duration-300">

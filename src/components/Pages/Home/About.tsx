@@ -45,7 +45,7 @@ export default function About() {
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48  backdrop-blur-[.34rem] rounded-full flex items-center justify-center border border-white/40 shadow-2xl z-20">
                             {/* Rotating Text (SVG) */}
                             <div className="absolute inset-0 animate-spin-slow">
-                                <svg viewBox="0 0 100 100" className="w-full h-full p-2 text-white fill-current font-bold text-[9px] uppercase tracking-[0.2em]">
+                                <svg viewBox="0 0 100 100" className="w-full h-full p-2 text-white fill-current font-bold   uppercase tracking-[0.2em]">
                                     <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
                                     <text>
                                         <textPath href="#circlePath" startOffset="0%">
