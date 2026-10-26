@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { path } from "@/utils/path";
-
+import CurrentYear from "@/components/UI/CurrentYear";
 const quickLinks = [
     { name: "About Us", url: "https://hridanshhospital.com/hridansh/about-us/" },
     { name: "Facilities", url: "https://hridanshhospital.com/hridansh/facilities/" },
@@ -38,7 +38,6 @@ const locations = [
 ];
 
 export default function Footer() {
-    const currentYear = new Date().getFullYear();
     return (
         <footer className="relative w-full pt-14 pb-8  rounded-t-4xl shadow-2xl overflow-hidden bg-navy"  >
             <div className="absolute inset-0 z-0">
@@ -132,8 +131,21 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-0 md:gap-5">
-                    <p className="text-white/70 text-sm text-center md:text-left">&copy; {currentYear} Hridansh Hospital. All rights reserved.</p>
-                    <p className="text-white/70 text-sm text-center md:text-right">Designed & Developed by <a href="https://qadritech.in" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white/90 font-medium transition-colors">QadriTech</a></p>
+                    <p className="text-white/70 text-sm text-center md:text-left">
+                        &copy; <CurrentYear /> Hridansh Hospital. All rights reserved.
+                    </p>
+
+                    <p className="text-white/70 text-sm text-center md:text-right">
+                        Designed &amp; Developed by{" "}
+                        <a
+                            href="https://qadritech.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white/70 hover:text-white/90 font-medium transition-colors"
+                        >
+                            QadriTech
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
