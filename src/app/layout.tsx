@@ -1,7 +1,10 @@
+
 import type { Metadata } from "next";
+import ReactDOM from "react-dom";
 import { Rethink_Sans, Onest } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
+import { path } from "@/utils/path";
 
 const rethinkSans = Rethink_Sans({
   subsets: ["latin"],
@@ -20,11 +23,18 @@ export const metadata: Metadata = {
   description: "Creating Family Dreams - Advanced Fertility",
 };
 
+const heroVideo = `${path}images/0_Doctor_Pregnant_Woman_1280x720.mp4`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  ReactDOM.preload(heroVideo, {
+    as: "video",
+    fetchPriority: "high",
+  });
+
   return (
     <html lang="en" className={`${rethinkSans.variable} ${onest.variable}`}>
       <body className="font-sans antialiased text-fourth bg-white dark:bg-gray-900 transition-colors duration-300">
