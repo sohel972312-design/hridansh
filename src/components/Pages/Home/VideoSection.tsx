@@ -129,7 +129,7 @@ export default function VideoSection() {
                         {/* YouTube iFrame (Replace 'YOUR_VIDEO_ID' with actual YouTube ID) */}
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                            src="https://www.youtube.com/embed/ZN4fxm6a31E?autoplay=1"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
