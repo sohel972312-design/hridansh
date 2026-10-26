@@ -85,7 +85,7 @@ export default function Testimonials() {
         {
             id: 8,
             type: "video",
-            image: "video-bg.jpg",
+            image: "Video-Bg.jpg",
         },
     ];
 
