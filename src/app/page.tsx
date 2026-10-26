@@ -9,6 +9,7 @@ import Leadership from "@/components/Pages/Home/Leadership";
 import VideoSection from "@/components/Pages/Home/VideoSection";
 import Testimonials from "@/components/Pages/Home/Testimonials"
 
+import ContactForm from "@/components/Pages/Home/ContactForm";
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-white  ">
@@ -22,6 +23,7 @@ export default function Home() {
       <Leadership />
       <VideoSection />
       <Testimonials />
+      <ContactForm />
     </main>
   );
 }

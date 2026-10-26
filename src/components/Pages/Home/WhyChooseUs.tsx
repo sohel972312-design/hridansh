@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
             <div className="new-container relative z-10  xl:max-w-8/12">
 
                 {/* Heading Section */}
-                <div className="flex flex-col items-center text-center mb-10 md:mb-16">
+                <div className="flex flex-col items-center text-center   md:mb-16">
                     <SectionHeading
                         badgeText="Why Choose Us"
                         title={
@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
 
                 <div className="relative w-full mx-auto flex flex-col">
                     {/* Top Features Grid */}
-                    <div className="flex flex-col lg:flex-row items-center justify-between w-full relative z-30 lg:gap-0 gap-4">
+                    <div className="flex flex-col lg:flex-row items-center justify-between w-full relative z-30  ">
                         <div className="flex flex-col gap-4 lg:gap-6 items-end w-full flex-1">
                             <div className="flex items-center gap-4 bg-gray-50 border border-gray-100 py-2 px-2 rounded-full w-full lg:w-80 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="w-10 h-10 rounded-full bg-red/5 flex items-center justify-center shrink-0">

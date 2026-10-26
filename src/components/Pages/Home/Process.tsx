@@ -58,7 +58,7 @@ export default function Process() {
 
 
             <div className="new-container relative z-20 ">
-                <section className="bg-navy relative rounded-2xl lg:rounded-4xl">
+                <section className="bg-navy relative rounded-2xl px-4! lg:rounded-4xl">
 
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
@@ -92,14 +92,14 @@ export default function Process() {
                         titleClassName="text-white"
                         highlightText="focused on"
                         highlightClassName="text-red"
-                        className="mb-20 z-10 relative "
+                        className=" z-10 relative "
                     />
 
                     {/* Zig-Zag Process Layout */}
                     <div className="flex  z-10 relative flex-wrap xl:flex-nowrap xl:flex-row items-center justify-between w-full max-w-6xl mx-auto   xl:gap-0  ">
 
                         {/* Step 1 */}
-                        <div className="flex flex-col items-center text-center w-full md:w-1/2 xl:w-64  ">
+                        <div className="flex flex-col items-center text-center w-full md:w-1/2 xl:w-64  mb-8 md:mb-0">
                             <div className="w-28 h-28 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-6 shadow-xl hover:bg-white/10 transition-colors">
                                 {steps[0].icon}
                             </div>
@@ -115,7 +115,7 @@ export default function Process() {
                         </div>
 
                         {/* Step 2 */}
-                        <div className="flex flex-col-reverse xl:flex-col items-center text-center w-full md:w-1/2 xl:w-64  ">
+                        <div className="flex flex-col-reverse xl:flex-col items-center text-center w-full md:w-1/2 xl:w-64  mb-8 md:mb-0">
                             <div>
                                 <h4 className="font-heading font-semibold text-white text-xl mb-2">{steps[1].title}</h4>
                                 <p className="text-gray-400 text-sm px-4 mb-6">{steps[1].desc}</p>
@@ -132,7 +132,7 @@ export default function Process() {
                         </div>
 
                         {/* Step 3 */}
-                        <div className="flex flex-col items-center text-center w-full md:w-1/2 xl:w-64  ">
+                        <div className="flex flex-col items-center text-center w-full md:w-1/2 xl:w-64  mb-8 md:mb-0">
                             <div className="w-28 h-28 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-6 shadow-xl hover:bg-white/10 transition-colors">
                                 {steps[2].icon}
                             </div>
@@ -163,18 +163,6 @@ export default function Process() {
 
                     {/* Footer Link Area */}
                     <div className="mt-10 pt-8  relative z-10 px-5 border-t border-white/10 text-center max-w-2xl mx-auto">
-
-
-                        <p className="text-gray-500 text-sm font-medium">
-                            let's make something great work together.{" "}
-                            <a href="#" className="text-navy hover:text-[#E99894] font-bold transition-colors inline-flex items-center gap-1 underline underline-offset-4 decoration-2">
-                                All Testimonials
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </p>
-
 
 
                         <p className="text-gray-300 text-sm md:text-base  leading-relaxed mb-0">

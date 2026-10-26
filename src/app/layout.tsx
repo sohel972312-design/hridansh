@@ -4,6 +4,10 @@ import ReactDOM from "react-dom";
 import { Rethink_Sans, Onest } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
+import BackToTop from "@/components/UI/BackToTop";
+import WhatsAppButton from "@/components/UI/WhatsAppButton";
+
 import { path } from "@/utils/path";
 
 const rethinkSans = Rethink_Sans({
@@ -37,9 +41,12 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${rethinkSans.variable} ${onest.variable}`}>
-      <body className="font-sans antialiased text-fourth bg-white dark:bg-gray-900 transition-colors duration-300">
+      <body className="  antialiased text-fourth bg-white   transition-colors duration-300">
         <Header />
         {children}
+        <Footer />
+        <BackToTop />
+        <WhatsAppButton />
       </body>
     </html>
   );

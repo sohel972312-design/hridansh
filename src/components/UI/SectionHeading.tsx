@@ -28,7 +28,7 @@ export default function SectionHeading({
     };
 
     return (
-        <div className={`max-w-3xl flex flex-col mb-16 ${alignStyles[align]} ${className}`}>
+        <div className={`max-w-3xl flex flex-col mb-10 xl:mb-16 ${alignStyles[align]} ${className}`}>
             {badgeText && (
                 <div className={`inline-flex items-center gap-2 bg-red/5 border border-red/10 px-4 py-1.5 rounded-full mb-4 ${badgeClassName}`}>
                     <span className="w-1.5 h-1.5 rounded-full bg-red"></span>
@@ -36,7 +36,7 @@ export default function SectionHeading({
                 </div>
             )}
 
-            <h2 className={`font-heading text-navy text-4xl  font-bold leading-tight ${titleClassName}`}>
+            <h2 className={`font-heading text-navy text-3xl lg:text-4xl  font-bold leading-tight ${titleClassName}`}>
                 {title}
                 {highlightText && (
                     <span className={`text-red ${highlightClassName}`}> {highlightText}</span>

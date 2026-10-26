@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
-    variant?: 'red' | 'red_outline' | 'green' | 'green_outline' | 'navy' | 'navy_outline' | 'glass' | 'unset';
+    variant?: 'red' | 'red_outline' | 'green' | 'green_outline' | 'navy' | 'navy_outline' | 'glass' | 'unset' | 'navydark';
     icon?: React.ReactNode;
     iconPosition?: 'left' | 'right';
     href?: string;
@@ -25,6 +25,7 @@ export default function Button({
 
     const variants = {
         red: "bg-red-600 text-white font-medium text-base hover:-translate-y-1 hover:bg-red-700 hover:shadow-[0_10px_20px_-10px_rgba(220,38,38,0.6)] focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:outline-none",
+        navydark: "bg-navydark text-white font-medium text-base hover:-translate-y-1 hover:bg-[#342e62] hover:shadow-[0_10px_20px_-10px_rgba(63,56,115,0.6)] focus-visible:ring-2 focus-visible:ring-navydark focus-visible:outline-none",
         red_outline: "bg-transparent border-2 border-red-600 text-red-600 font-medium text-base hover:bg-red-50 dark:hover:bg-red-900/20 hover:-translate-y-1",
 
         green: "bg-green-600 text-white font-medium text-base hover:-translate-y-1 hover:bg-green-700 hover:shadow-[0_10px_20px_-10px_rgba(22,163,74,0.6)] focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:outline-none",

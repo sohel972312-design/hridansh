@@ -103,15 +103,22 @@ export default function About() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                             {/* Feature 1 */}
                             <div className="flex items-start gap-4">
-                                <div className="w-14 h-14 shrink-0 rounded-full bg-red/5 flex items-center justify-center border border-red/10 text-red text-2xl hover:bg-red hover:text-white transition-colors duration-300">
-                                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        {/* Hands cupping */}
+                                <div className="w-14 h-14 shrink-0 rounded-full bg-red/5 flex items-center justify-center border border-red/10 text-red text-2xl hover:bg-navy hover:text-white transition-colors duration-300">
+                                    {/* <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                      
                                         <path d="M7 16c-1.5 0-3-1.5-4-3 0-2 2.5-4 5-2.5 1-1 2.5-1 4 0 1-1 2.5-1 4 0 2.5-1.5 5 .5 5 2.5 0 1.5-1.5 3-4 3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M12 21c-4-3-8-6-8-9 0-2.5 2-4.5 4.5-4.5 1.5 0 2.8.8 3.5 2 .7-1.2 2-2 3.5-2 2.5 0 4.5 2 4.5 4.5 0 3-4 6-8 9z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" fill="currentColor" />
-                                        {/* Center Baby/Heart Element */}
+                                      
                                         <path d="M12 14c-1.5 0-2-1-2-2 0-1.5 1.5-2 2-2s2 .5 2 2c0 1-.5 2-2 2z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                         <circle cx="12" cy="8.5" r="1.5" fill="currentColor" stroke="none" />
-                                    </svg>
+                                    </svg> */}
+                                    <Image
+                                        src={`${path}images/Family-Focused.svg`}
+                                        alt="Pregnant woman smiling"
+                                        height={200}
+                                        width={200}
+                                        className="h-10 w-10"
+                                    />
                                 </div>
                                 <div className="flex flex-col pt-1">
                                     <h4 className="text-navy font-heading font-bold text-lg mb-1">Family Focused</h4>
