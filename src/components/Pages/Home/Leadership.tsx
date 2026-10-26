@@ -73,7 +73,7 @@ export default function Leadership() {
     ];
 
     return (
-        <section className="relative bg-white overflow-hidden">
+        <section className="relative bg-white pt-0! overflow-hidden">
             <div className="new-container">
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
                     <div className="flex flex-col items-start">
@@ -89,7 +89,7 @@ export default function Leadership() {
                             className="mb-0!"
                         />
                     </div>
-                    <div className="max-w-md border-l-2 border-gray-100 pl-6 py-1 lg:mb-2 border-4">
+                    <div className="max-w-md border-0 lg:border-l-2 border-gray-100 pl-6 py-1 lg:mb-2">
                         <p className="text-gray-500 text-sm md:text-sm leading-[1.8]">
                             Our IVF treatments use cutting-edge technology to help you on your journey to parenthood, with care tailored to your unique needs.
                         </p>
@@ -142,7 +142,7 @@ export default function Leadership() {
                                                     </div>
                                                 </div>
                                                 <div className="absolute inset-0 flex flex-col items-center justify-start pt-3 gap-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                                                    <Link href="#" className="w-9 h-9 rounded-full bg-[#f8f9fa] flex items-center justify-center hover:bg-navy hover:text-white hover:shadow-md hover:scale-110 transition-transform">
+                                                    <Link href="#" className="w-9 h-9 rounded-full bg-[#f8f9fa] text-navy flex items-center justify-center hover:bg-navy hover:text-white hover:shadow-md hover:scale-110 transition-transform">
                                                         <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                                                             <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
                                                         </svg>
