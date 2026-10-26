@@ -1,6 +1,6 @@
 import Link from "next/link";
 export default function WhatsAppButton() {
-    const whatsappNumber = "9106544027";
+    const whatsappNumber = "919978393328";
     const message = "Hello Hridansh Hospital, I want to book an appointment.";
     return (
         <Link href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer" className="fixed bottom-20 right-6 z-50 p-3.5 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-all duration-300 flex items-center justify-center" aria-label="Chat with us on WhatsApp">
