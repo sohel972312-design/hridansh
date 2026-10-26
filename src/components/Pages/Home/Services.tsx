@@ -45,7 +45,7 @@ export default function Services() {
     return (
         <section className="relative bg-red/7 overflow-hidden">
             {/* Hexagon Background Pattern (Optional CSS Pattern) */}
-            <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'103.923\' viewBox=\'0 0 60 103.923\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\' stroke=\'%23d1d5db\' stroke-width=\'1\'%3E%3Cpath d=\'M30 103.923L0 86.603V51.962l30-17.32 30 17.32v34.641zM30 51.962L0 34.641V0l30-17.32 30 17.32v34.641z\'/%3E%3C/g%3E%3C/svg%3E")' }}></div>
+            <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'103.923\' viewBox=\'0 0 60 103.923\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\' stroke=\'%23d1d5db\' strokeWidth=\'1\'%3E%3Cpath d=\'M30 103.923L0 86.603V51.962l30-17.32 30 17.32v34.641zM30 51.962L0 34.641V0l30-17.32 30 17.32v34.641z\'/%3E%3C/g%3E%3C/svg%3E")' }}></div>
 
             <div className="new-container relative z-10">
                 {/* Header Section */}
